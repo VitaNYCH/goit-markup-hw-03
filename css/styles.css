@@ -51,6 +51,12 @@
 .page-header{
     background-color:#FFFFFF;
 }
+.site-nav{
+    display: flex;
+}
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
 .site-nav .link{
     color:var(--primary-text-color);
     font-weight: 500;
@@ -120,6 +126,7 @@
     margin: 0;
     padding: 0;
 }
+
 /*features*/
 .feature-list .title {
     color:var(--primary-text-color);
@@ -209,6 +216,13 @@
     letter-spacing: 0.03em;
     border-radius: 4px;
     padding: 6px 25px;
+}
+.list.btn {
+    margin-bottom: 34px;
+    display: flex;
+}
+.list.btn .navigation:not(:last-child){
+    margin-right: 8px;
 }
 .button:hover,
 .button:focus{
