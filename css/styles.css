@@ -89,36 +89,51 @@
 /*hero*/
 .hero{
     background-color: #2F303A;
+    text-align: center;
 }
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 32px;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
+    
 }
-
+.section{
+    background-color:var(--primary-bcground-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .section-title{
     color:var(--primary-text-color) ;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /*features*/
 .feature-list .title {
     color:var(--primary-text-color);
     font-size: 14px;
     line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 10; 
 }
 .list-item .text{
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.71;
+    margin-top: 0;
+    
 }
 /*work*/
 .work-list .title{
@@ -133,6 +148,8 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .section-team {
     background-color: var(--bcground-secondary-white-color);
@@ -141,6 +158,8 @@
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /*footer*/
 .end-page{
@@ -178,6 +197,7 @@
 
 /*Styles of portfolio*/
 .button {
+    display: inline-block;
     color: var(--primary-text-color);
     background-color:var(--secondary-white-color);
     font-family: 'Roboto';
@@ -187,6 +207,8 @@
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 6px 25px;
 }
 .button:hover,
 .button:focus{
@@ -194,6 +216,8 @@
     background-color:var(--bcground-accent-color);
 }
 .button.primary{
+    min-width: 216px;
+    display: inline-block;
     color:var(--primary-white-color);
     background-color:var(--bcground-accent-color);
     font-family: 'Roboto';
@@ -203,6 +227,8 @@
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 .button.secondary{
     color: var(--primary-text-color);
@@ -213,4 +239,10 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.section.no-padding{
+    padding-top: 0;
+    padding-bottom: 0;
 }
