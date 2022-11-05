@@ -8,7 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; background-color: aqua;
 }
 :root {
     --primary-text-color:#212121;
@@ -51,13 +51,26 @@
 .page-header{
     background-color:#FFFFFF;
 }
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center; 
+}
+
 /*main-div*/
 .main-div{
     display: flex;
-}
-.site-nav{
-    display: flex;
-}
+    align-items: center;}
+
 .site-nav .item:not(:last-child){
     margin-right: 50px;
 }
@@ -88,6 +101,7 @@
 }
 .contacts{
     display: flex;
+    margin-left: auto;
 }
 .contacts .item+.item{
     margin-left: 50px;
@@ -140,31 +154,34 @@
     text-align: center;
     
 }
-.list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 /*features*/
 .feature-list .title {
     margin-top: 0;
-    margin-bottom: 10;
-    
-    color:var(--primary-text-color);
+    margin-bottom: 10 px;
+    color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.14;
-     
+    margin-bottom: 10px;
 }
-.list-item .text{
+.feature-list {
+    display: flex;
+    flex: wrap;
+}
+.feature-list .list-item{
+width: 270px;
+}
+.list-item .text {
     margin-top: 0;
-    
+    margin-bottom: 0;
+
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.71;
-    
-    
 }
+
+
+
 /*work*/
 .work-list .title{
     color: var(--primary-text-color);
@@ -245,11 +262,11 @@
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
-    
 }
 .list.btn {
     margin-bottom: 34px;
     display: flex;
+    
 }
 .list.btn .navigation:not(:last-child){
     margin-right: 8px;
@@ -281,6 +298,7 @@
     color: var(--primary-text-color);
     background-color:var(--bcground-secondary-white-color);
 }
+
 .section-port-title{
     margin-top: 0;
     margin-bottom: 4px;
@@ -288,8 +306,27 @@
     color: var(--primary-text-color);
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em; 
+}
+.list-content {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     
+}
+.list-items{
+    width:calc ((100%-60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: tomato;
+}
+.list-items:nth-child(3n){
+    margin-right: 0;
+}
+.list-items:nth-last-child(-n+3){
+    margin-bottom: 0;   
 }
 .section.no-padding{
     padding-top: 0;
