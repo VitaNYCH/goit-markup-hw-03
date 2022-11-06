@@ -20,8 +20,9 @@
     --secondary-white-color:#F5F4FA;
     --bcground-secondary-white-color: #F5F4FA;
 }
-
+/*body*/
 /*header*/
+
 .logo, .accent {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -41,8 +42,6 @@
 .logo:focus{
     color: var(--accent-color);
 }
-
-/*body*/
 .page {
     color:var(--primary-text-color);
     background-color: var(--primary-bcground-color);
@@ -50,6 +49,7 @@
 }
 .page-header{
     background-color:#FFFFFF;
+    border-bottom: #ECECEC 1px;
 }
 .list {
     list-style: none;
@@ -166,7 +166,7 @@
 }
 .feature-list {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 .feature-list .list-item{
 width: 270px;
@@ -237,10 +237,16 @@ margin-right: 30px;
     
 }
 /*footer*/
+.logo.end {
+    margin-bottom: 20px;
+}
 .end-page{
     background-color:#2F303A;
 }
 .post-office{
+
+    margin-top: 0;
+    margin-bottom: 9px;
     color:var(--primary-white-color);
     font-style: normal;
     font-size: 14px;
@@ -252,6 +258,9 @@ margin-right: 30px;
 .color-footer:hover,
 .color-footer:focus {
     color: var(--accent-color);
+}
+.email{
+    margin-bottom: 9px;
 }
 .email,
 .number {
@@ -289,7 +298,8 @@ margin-right: 30px;
 }
 .list.btn {
     margin-bottom: 34px;
-    display: flex; 
+    display: flex;
+    justify-content: center;
 } 
 .list.btn .navigation:not(:last-child){
     margin-right: 8px;
@@ -343,7 +353,7 @@ margin-right: 30px;
     width:calc ((100%-60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
-    background-color: tomato;
+    border-bottom:  #EEEEEE 1px; ;
 }
 .list-items:nth-child(3n){
     margin-right: 0;
