@@ -220,6 +220,9 @@ margin-right: 30px;
     width: calc((100%-90px)/4);
     margin-right: 30px;
 }
+.list-member:nth-child(4){
+    margin-right: 0;
+}
 .section-team {
     background-color: var(--bcground-secondary-white-color);
 }
@@ -280,6 +283,11 @@ margin-right: 30px;
 }
 
 /*Styles of portfolio*/
+
+.container.portfolio{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 .button {
     display: inline-block;
     border-radius: 4px;
