@@ -272,7 +272,7 @@ margin-right: 30px;
 .color-footer:focus {
     color: var(--accent-color);
 }
-.email{
+.list .email{
     margin-bottom: 9px;
 }
 .email,
@@ -319,7 +319,7 @@ margin-right: 30px;
 .list.btn .navigation:not(:last-child){
     margin-right: 8px;
 }
-.button:hover,
+.button:hover, 
 .button:focus{
     color: var(--primary-white-color);
     background-color:var(--bcground-accent-color);
@@ -352,6 +352,9 @@ margin-right: 30px;
     margin-bottom: 4px;
     
     color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -368,8 +371,16 @@ margin-right: 30px;
     padding: 24px 20px;
     border: 1px solid #EEEEEE;
 }
-.list-items>.text {
+.content>.text {
     color: var(--secondary-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .list-items{
     width:calc ((100%-60px)/3);
